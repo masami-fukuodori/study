@@ -15,7 +15,7 @@ class State:
         return self.x == other.x and self.y == other.y
 
 
-def bfs(h, w, t, sx, sy, gx, gy):
+def bfs(h, w, t, sx, sy, gx, gy):#(マップ縦、マップ横、マップ本体、スタート横軸、スタート縦軸、ゴール横軸、ゴール縦軸)
     open_list = []#未調査リスト
     closed = set()#調査済みリスト
     initial_state = State(sx, sy)#初期位置指定
