@@ -20,7 +20,6 @@ sushi_position = [int(i) for i in input().split()]
 
 
 time = 0
-sushi = m
 
 for i in range(100):
     
