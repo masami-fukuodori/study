@@ -1,16 +1,16 @@
 #要素を一つずつ取り出したバージョン
 n = int(input())
-a = []
+a = []#空のリストを用意
 for s in map(int, input().split()):
-    a.append(s)
-    if len(a) > 1:
+    a.append(s)#要素を追加
+    if len(a) > 1:#リストの要素数が０の時はスルー、１始まり
         x = a[-1]
-        i = len(a)-1
-        j = i-1
-        while j >= 0 and a[j] > x:
+        i = len(a)-1#追加された場所
+        j = i-1#追加された場所の一つ前を設定、比較対象の要素
+        while j >= 0 and a[j] > x:#一つ前の要素が大きかった場合、場所を入れ替える
             a[j+1] = a[j]
             j -= 1
         
-        a[j+1] = x
+        a[j+1] = x#要素が少なかった場合、比較した要素の後ろに挿入
     
     print(a)
