@@ -7,7 +7,7 @@ class State:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-#ハッシュ地取得　とりあえずこういうもの
+#ハッシュ値取得　とりあえずこういうもの
     def __hash__(self):
         return (self.x << 16) | self.y
 #同値性判定　とりあえずこういうもの
