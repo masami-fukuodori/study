@@ -1,5 +1,5 @@
 def insertion_sort(a, n):#aは配列、nは要素数
-    for i in range(1, n):
+    for i in range(1, n):#前の要素と比較するので、1から始める
         x = a[i]#i番目の要素を取得
         j = i-1#i番目の一つ前、j番目とする
 
