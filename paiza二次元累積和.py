@@ -15,5 +15,5 @@ for i in range(n):
     y, x = map(int, input().split())
     total = 0
     for s in range(y):
-        total += line[s][x-1]
+        total += line[s][x]-1
     print(total)
